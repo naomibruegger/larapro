@@ -15,6 +15,7 @@ class CreatePlanesTable extends Migration
     {
         Schema::create('planes', function (Blueprint $table) {
             $table->id();
+            $table->charset('name');
             $table->bigInteger('number');
             $table->integer('passenger')->default(0);
             $table->decimal('refuel_time', 8, 2)->default(0,5);

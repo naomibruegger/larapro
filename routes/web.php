@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::resource('planes', 'PlaneController');
+Route::resource('flights', 'FlightController');
+Route::resource('gates', 'GateController');
